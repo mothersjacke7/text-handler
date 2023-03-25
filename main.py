@@ -1,8 +1,11 @@
+import os
+
 import reformatter
 import duplicate_removal
 import shuffler
 
 def menu():
+    os.system('cls' if os.name == 'nt' else 'clear')
     print('Добро пожаловать в программу для работы с файлами')
     choice_filename = input('Введите имя файла: ')
     print('''
