@@ -3,6 +3,7 @@ import os
 import reformatter
 import duplicate_removal
 import shuffler
+import txtinone
 
 def menu():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -23,6 +24,8 @@ def menu():
     elif choice == '3':
         shuffler.shuffler(choice_filename)
     elif choice == '4':
+        txtinone.txtinone(choice_filename)
+    elif choice == '5':
         exit()
     else:
         print('Неверный ввод')
